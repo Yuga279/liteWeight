@@ -1,1 +1,2 @@
-# liteWeight
+# lightweightApplication
+

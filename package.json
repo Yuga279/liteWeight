@@ -1,0 +1,16 @@
+{
+  "name": "lightweight-application-root",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "concurrently": "^8.2.2",
+    "typescript": "^5.8.3"
+  },
+  "scripts": {
+    "start": "npx concurrently \"npm run dev-backend\" \"npm run dev-frontend\"",
+    "dev-backend": "cd backend && npx ts-node-dev src/index.ts",
+    "dev-frontend": "cd frontend && npm run serve"
+  }
+}
